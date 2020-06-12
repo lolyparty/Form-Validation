@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background:#2980b9;
+    display:flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    font-family: 'roboto', 'san-serif';
+}
+
+.container{
+    width:400px;
+    background:white;
+    align-items: center;
+    padding:10px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 50px 5px rgba(39, 39, 39, 0.3);
+}
+
+.create{
+    text-align: center;
+    padding:5px;
+    border-bottom: 1px solid gray;
+    margin-bottom:5px;
+}
+
+.name{
+    font-size: 1.2rem;
+    padding:5px 0px;
+}
+
+.form-control{
+    margin-bottom:5px;
+    padding-bottom:10px;
+    position: relative;
+}
+
+form{
+    padding:10px 15px;
+}
+
+input{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #adadad;
+    width:100%;
+}
+
+input:focus{
+    outline:none;
+    border:1px solid #000;
+}
+
+i{
+    position:absolute;
+    top:43px;
+    right:10px;
+    visibility:hidden;
+}
+
+.fa-check-circle{
+    color:green;
+}
+
+.fa-exclamation-circle{
+    color:red;
+}
+
+.form-control.success i.fa-check-circle{
+    visibility:visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    visibility:visible;
+}
+
+.error input{
+    border-color: red;
+}
+
+.success input{
+    border-color:green;
+}
+
+small{
+    padding:5px;
+    width:392px;
+    box-sizing: border-box;
+    color:red;
+    font-size:0.9rem;
+    margin-top:5px;
+    visibility: hidden;
+}
+
+.error small{
+    visibility: visible;
+}
+
+form button{
+    width:100%;
+    padding:8px;
+    font-size:1.2rem;
+    display:block;
+    border:none;
+    margin-top:25px;
+    color:white;
+    background:#2980b9;
+    border-radius:3px;
+}
+
+button:focus{
+    outline:none;
+}
+
+button:hover{
+    cursor:pointer !important;
+}
