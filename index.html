@@ -4,10 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link type="text/css" href="style.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="create">
+            <h2>Create Account</h2>
+        </div>
+        <div class="form">
+            <form>
+                <div class="form-control" id="user">
+                    <div class="name">
+                        <label>Username</label>
+                    </div>
+                        <input id="username"  type="name" placeholder="name">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Username cannot be empty</small>
+                </div>
+
+                <div class="form-control ">
+                    <div class="name">
+                        <label>Email</label>
+                    </div>
+                        <input id="email" name="email" type="email" placeholder="account@example.com">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Email cannot be empty</small>
+                </div>
+
+                <div class="form-control">
+                    <div class="name">
+                        <label>Password</label>
+                    </div>
+                        <input id="password" name="password" type="Password" placeholder="Password">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Password cannot be empty</small>
+                </div>
+
+                <div class="form-control">
+                    <div class="name">
+                        <label>Confirm Password</label>
+                    </div>
+                        <input id="password2" name="password" type="Password" placeholder="Confirm Password">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Password cannot be empty</small>
+                </div>
+                
+                <button class="submit">Submit</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
